@@ -159,17 +159,4 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 
-// Add an event listener to the form submit
- document.querySelector('form[data-form]').addEventListener('submit', function (e) {
-  e.preventDefault(); // Prevent the form from submitting
-  const fullname = document.querySelector('input[name="fullname"]').value;
-  const email = document.querySelector('input[name="email"]').value;
-  const message = document.querySelector('textarea[name="message"]').value;
 
-  // Build the WhatsApp URL with the user's input
-  const whatsappURL = `https://wa.me/6283804226807?text=Full%20Name:%20${encodeURIComponent(fullname)}%0AEmail:%20${encodeURIComponent(email)}%0AMessage:%20${encodeURIComponent(message)}`;
-
-  // Redirect the user to WhatsApp with the pre-filled message
-  window.location.href = whatsappURL;
-});
-}
