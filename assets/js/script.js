@@ -172,3 +172,4 @@ for (let i = 0; i < navigationLinks.length; i++) {
   // Redirect the user to WhatsApp with the pre-filled message
   window.location.href = whatsappURL;
 });
+}
